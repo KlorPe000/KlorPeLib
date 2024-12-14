@@ -25,6 +25,15 @@ local OrionLib = {
 	SaveCfg = false
 }	
 
+local function printWithStyle(message)
+    local line = string.rep("=", #message + 4)
+    print(line)
+    print("= " .. message .. " =")
+    print(line)
+end
+
+printWithStyle("Успешно загружаем скрипт")
+
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
