@@ -33,6 +33,10 @@ local Success, Response = pcall(function()
 end)
 printSuccess("Успешно загружаем скрипт...")
 
+if not Success then
+	warn("\nKlorPe Library — Не вдалося завантажити Feather Icons. Код помилки: " .. Response .. "\n")
+end
+
 local function GetIcon(IconName)
 	if Icons[IconName] ~= nil then
 		return Icons[IconName]
