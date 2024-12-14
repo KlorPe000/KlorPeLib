@@ -25,23 +25,6 @@ local OrionLib = {
 	SaveCfg = false
 }	
 
-local function printAsciiArt()
-    local art = [[
-                                                                          
-   ___  ____     _____        ____       _______      ______     _________ 
-  |_  ||_  _|   |_   _|     .'    `.    |_   __ \    |_   __ \  |_   ___  |
-    | |_/ /       | |      /  .--.  \   | |__) |       | |__) |   | |_  \_|
-    |  __'.       | |   _  | |    | |   |  __ /        |  ___/    |  _|  _ 
-   _| |  \ \_    _| |__/ | \  `--'  /  _| |  \ \_     _| |_      _| |___/ |
-  |____||____|  |________|  `.____.'  |____| |___|   |_____|    |_________|  
-    ]]
-end
-
--- Основная программа
-printBanner("Успішно завантажуємо скрипт")
-printAsciiArt()
-
-
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
