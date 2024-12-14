@@ -25,14 +25,30 @@ local OrionLib = {
 	SaveCfg = false
 }	
 
-local function printWithStyle(message)
-    local line = string.rep("=", #message + 4)
-    print(line)
-    print("= " .. message .. " =")
-    print(line)
+-- Цветной вывод (если терминал поддерживает цвета)
+local function colorize(color, text)
+    return string.format("\27[%sm%s\27[0m", color, text)
 end
 
-printWithStyle("Успешно загружаем скрипт")
+-- Арт KLORPE
+local art = [[
+   ___  ____     _____        ____       _______      ______     _________ 
+  |_  ||_  _|   |_   _|     .'    `.    |_   __ \    |_   __ \  |_   ___  |
+    | |_/ /       | |      /  .--.  \   | |__) |       | |__) |   | |_  \_|
+    |  __'.       | |   _  | |    | |   |  __ /        |  ___/    |  _|  _ 
+   _| |  \ \_    _| |__/ | \  `--'  /  _| |  \ \_     _| |_      _| |___/ |
+  |____||____|  |________|  `.____.'  |____| |___|   |_____|    |_________|  
+]]
+
+-- Вывод
+print(colorize("36", "========================================"))
+print(colorize("32", "       ✅ Скрипт успешно выполнен! ✅"))
+print(colorize("36", "========================================"))
+print(colorize("33", art))
+print(colorize("36", "----------------------------------------"))
+print(colorize("35", "          Спасибо за использование!"))
+print(colorize("36", "========================================"))
+
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
