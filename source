@@ -25,29 +25,6 @@ local OrionLib = {
 	SaveCfg = false
 }	
 
--- Цветной вывод (если терминал поддерживает цвета)
-local function colorize(color, text)
-    return string.format("\27[%sm%s\27[0m", color, text)
-end
-
-local function printBanner(message)
-    local border = string.rep("*", #message + 6)
-    print(border)
-    print("*  " .. message .. "  *")
-    print(border)
-end
-
-print([[
-   ___  ____     _____        ____       _______      ______     _________ 
-  |_  ||_  _|   |_   _|     .'    `.    |_   __ \    |_   __ \  |_   ___  |
-    | |_/ /       | |      /  .--.  \   | |__) |       | |__) |   | |_  \_|
-    |  __'.       | |   _  | |    | |   |  __ /        |  ___/    |  _|  _ 
-   _| |  \ \_    _| |__/ | \  `--'  /  _| |  \ \_     _| |_      _| |___/ |
-  |____||____|  |________|  `.____.'  |____| |___|   |_____|    |_________|  
-]])
-
-printBanner("Успішно завантажуємо скрипт")
-
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
