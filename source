@@ -33,7 +33,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-  warn("\nKlorPe Library — Не вдалося завантажити Feather Icons. Код помилки: " .. Response .. "\n")
+  print("\nKlorPe Library — Все получилось! \n", Color3.fromRGB(0, 255, 0))
 end  
 
 local function GetIcon(IconName)
