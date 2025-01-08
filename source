@@ -33,7 +33,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-  print("\nKlorPe Library — Все получилось! \n", Color3.fromRGB(0, 255, 0))
+  print("\nБібліотека KlorPe успішно завантажується! \n", Color3.fromRGB(0, 255, 0))
 end  
 
 local function GetIcon(IconName)
