@@ -33,7 +33,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-  warn("\27[32mБібліотека KlorPe успішно завантажується!\27[0m")
+  print("\27[32mБібліотека KlorPe успішно завантажується!\27[0m")
 end 
 
 local function GetIcon(IconName) 
